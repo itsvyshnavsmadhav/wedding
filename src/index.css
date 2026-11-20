@@ -1,0 +1,111 @@
+/* Root variables for Premium South Indian Wedding Aesthetic */
+:root {
+  --color-ivory: #faf6ef;
+  --color-ivory-dark: #f3ecdf;
+  --color-cream: #fdfbf7;
+  --color-card-bg: #fffdf9;
+  
+  --color-maroon: #541722;
+  --color-maroon-dark: #3b0f17;
+  --color-maroon-light: #70212f;
+  
+  --color-gold: #b38b4c;
+  --color-gold-deep: #8f6a31;
+  --color-gold-light: #dfcba5;
+  --color-gold-faint: rgba(179, 139, 76, 0.18);
+  --color-gold-border: rgba(179, 139, 76, 0.38);
+
+  --color-text-primary: #331f18;
+  --color-text-secondary: #6e5648;
+  --color-text-muted: #967d6e;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-caps: 'Montserrat', sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --radius-full: 9999px;
+
+  --shadow-subtle: 0 4px 20px rgba(84, 23, 34, 0.05);
+  --shadow-card: 0 10px 30px rgba(110, 86, 72, 0.08);
+  --shadow-gold: 0 8px 25px rgba(179, 139, 76, 0.18);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  background-color: var(--color-ivory);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: auto !important; /* Let Lenis handle the physics smoothly without conflicts */
+  text-rendering: optimizeLegibility;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--color-ivory);
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(179, 139, 76, 0.04) 0%, transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(84, 23, 34, 0.03) 0%, transparent 45%);
+  color: var(--color-text-primary);
+  line-height: 1.65;
+  overflow-x: hidden;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Elegant scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ivory);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-light);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+::selection {
+  background-color: var(--color-maroon);
+  color: #ffffff;
+}
